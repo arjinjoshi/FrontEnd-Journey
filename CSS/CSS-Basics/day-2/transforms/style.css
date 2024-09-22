@@ -1,0 +1,44 @@
+.box {
+    background-color: aqua;
+    /* only works in block elements  */
+    /* inline elementsmaa kaam gardaina */
+    /* transform: translate(20px, 20px); */
+    transform: translateX(100px);
+    transform: translateY(50px);
+    transform: translate(100px, 200px);
+}
+
+.box2 {
+    background-color: aqua;
+    /* positive value clockwise and negative value anticlockwise  */
+    transform: rotate(45deg);
+    transform: rotate(-45deg);
+}
+
+.box3 {
+    margin: 200px;
+    background-color: aqua;
+    transform: scaleX(1.5);
+    transform: scaleY(2);
+    transform: scale(1.5, 5);
+    /* transform:scale(first attribute le horizontally scale garxa, second attribute le vertically scaling garxa);  */
+    /* we can also use point values */
+
+
+}
+
+.box4 {
+    margin: 200px;
+    background-color: aqua;
+    transform: skew(180deg);
+    transform: skew(-180deg);
+    transform: skew(45deg);
+    transform: skew(-45deg);
+    transform: skew(270deg);
+    transform: skew(90deg);
+    transform: skew(249deg);
+    transform: skewx(49deg);
+    transform: skewy(49deg);
+
+
+}
