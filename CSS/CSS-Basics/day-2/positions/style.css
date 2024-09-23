@@ -1,0 +1,55 @@
+p {
+  position: static;
+}
+
+div {
+  /* display inline block grye single horizontal linemaa aaunxa  */
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  background-color: aqua;
+  border: 1px solid black;
+}
+
+.box {
+  /* relative position le chai keiko relativemaa position change garauni bhoo jstai yo casemaa wrapperko top ko relativemaa and sideko boxko relativemaa gariraxa  */
+  position: relative;
+}
+
+#box1 {
+  /* fixed positionle chai with respectko screenko size like veiwportko hisabmaa spaxing dinx  */
+  position: fixed;
+  top: 0px;
+  left: 200px;
+}
+
+#box2 {
+  /* ysle wrapperko top & sideko relativemaa change bhako x  */
+  top: 200px;
+  left: 20px;
+  position: absolute;
+}
+
+#box3 {
+  position: relative;
+  top: 50px;
+  right: 50px;
+  /* absolute position le chai with respect to ancestor(it must be non-static) and ancestor xaina bhni with respectto body tag but y0 casemaa wrapperko border in this case tsko hisabmaa change garni bhoo position  */
+  position: absolute;
+}
+
+#box4 {
+  /* sticky positionmaa chai left and right positioning gareko surumai dekhinx but if top rakheko xa bhni chai jaba item scroll hunathalxa top bata teti pixel xodeko dekhinxa and content jaile stitch bhako hunxa screen sanga  */
+  position: sticky;
+  top: 20px;
+  left: 100px;
+}
+
+.wrapper {
+  background-color: yellow;
+  border: 1px solid black;
+  height: 10000px;
+  width: 100vw;
+  position: relative;
+  /* position: fixed; */
+}
