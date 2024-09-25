@@ -1,0 +1,38 @@
+h1 {
+    /* text-shadow: horizontal value vertical value  blur radius(optional)  color ; */
+    text-shadow: 3px 3px 3px red;
+    text-shadow: 3px 3px 3px red;
+    text-shadow: 3px 3px 3px red, 5px 5px 5px green;
+}
+
+.box {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px;
+
+    /* in box shadow thw shadow of the box will be same color as of text  */
+    /* by default text color ni black hunxa soo box shadow color ni black hunibhoo */
+
+    color: red;
+
+    /* Aba hamilai text color and box color xuttai chaiyeko xa bhni chai box shadow kai linemaa color dinye  */
+    box-shadow: 10px 10px green;
+
+    /* aba blur ni add garna same as before  and multiple shadows laini same as before */
+    box-shadow: 10px 10px 15px green, 15px 15px 15px brown;
+
+    /* By using negative value we can change the direction of box shadows but never give negative value for blur radius otherwise it won't run/execute */
+    box-shadow: -10px -10px 15px green, 15px 15px 15px brown;
+/* 
+    Two, three, or four <length> values.
+If only two values are given, they are interpreted as <offset-x> and <offset-y> values.
+If a third value is given, it is interpreted as a <blur-radius>.
+If a fourth value is given, it is interpreted as a <spread-radius>. */
+    
+    /* spread radius healps to spread the color as per our need */
+    /* Just like third given value is indicated as blur radius , the fourth one is indicated as spread radius  */
+    box-shadow: -10px -10px 15px -7px green, 15px 15px 15px -7px brown;
+
+    /* Positive values will cause the shadow to expand and grow bigger, negative values will cause the shadow to shrink. If not specified, it will be set to 0 */
+}
