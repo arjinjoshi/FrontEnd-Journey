@@ -1,0 +1,75 @@
+*{
+    /* box-sizing: border-box; yo use grye contentko size batai border jaanx but yo property use nagrye content alag ani tsko bahira borderko size thapinxa */
+    box-sizing: border-box;
+}
+
+.container {
+    height: 400px;
+    border: 2px solid green;
+    display: flex;
+
+    flex-wrap: wrap;
+
+
+    justify-content: center;
+    align-items: center;
+
+
+    align-content: flex-start;
+    /* gap: 10px; */
+
+
+
+
+}
+
+.box {
+    border: 2px solid brown;
+    background-color: aqua;
+    width: 150px;
+    flex-basis: 50%;
+    /* 50% (flex-wrap:wrap; garye effect dekhinx) ysto garye kunai 2 item euta rowmaa aauni bhoo but border use greko hunale 2px tesle khako xa soo euta linemaa euta matra dekhinxa tyo fix garna universal selector use garera box-sizing: borderbox grye ani dekhinx*/
+
+    /* flex-grow: 1; */
+
+}
+
+
+/* order ko value by default zero hunxa and if we want hamro flex-items jun x tyo right side tira jaawos(agadi jawos) then we need to give the order higher  */
+/* and if kunai duita ko same order xa bhni last maa deko order jun flex itemlai x tyo agadi aaunxa(right side aaunxa) than previous fleax item  */
+#box1 {
+    order: 1;
+    flex-grow: 1;
+    /* align itself use garera yesari koi flex-itemlai matra endmaa align garna milni bhooo */
+    /* align-self: flex-end; */
+}
+
+#box2 {
+    order: 8;
+    flex-grow: 1;
+    
+    /* align itself use garera yesari koi flex-itemlai matra stretch garna milni bhooo */
+    /* align-self: stretch; */
+}
+
+
+#box3 {
+    order: 5;
+    /* flex shrink use garexi chai squeeze garda tyo item chai aru bhanda fast shrink hunxa */
+    /* (flex-shrink use garda flex-wrap no wrap rakhni) */
+    flex-shrink: 4;
+    /* width:75px; */
+    /* flex-basis: 75px; */
+    /* Difference between flex-basis and width chai k ho bhanda normal casemaa bothle same kaam garxa  */
+    /* BUt when flexitem(word in this case) is too large manau tetibela aba width deko xa bhni content overflowko casemaa widthle trim(hide) gardinxa  */
+    /* But flex basis use gareko xa & content overflow bhakoxa bhni f nlex-itemko length anushar width badaidinxa even if width hamle kamm deko xa bhni which makes it responsive   */
+    
+    
+    /* align itself use garera yesari koi flex-itemlai matra startmaa align garna milni bhooo */
+    /* align-self: flex-start; */
+}
+
+#box4 {
+    order: 5;
+    flex-shrink: 2;
+}
