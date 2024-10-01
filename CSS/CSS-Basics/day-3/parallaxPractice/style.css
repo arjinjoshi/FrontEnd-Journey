@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* 3d banairako xam parallex so perspective on hannu paryo z-axis sanga khelna  */
+    perspective: 10px;
+}
+
+/* container bhitra background and foreground overlap garauna we use absolute positin which positioned in according to nearest positioned non-static ancestors   */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* preserve 3d use nagrye 2dmaa show hunxa duitai image chapkeko jasto hunxa property show garna garo hunc  */
+    transform-style: preserve-3d;
+    /* z index is used for overlapping ko item kasko mathi aaunx bhnera define garda use hunxa  */
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground {
+    transform: translateZ(-20px) scale(3);
+
+}
+
+.background,
+.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* object-fit: cover; */
+
+}
