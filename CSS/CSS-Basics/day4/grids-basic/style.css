@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: brown;
+    height: 500px;
+    border: 3px solid black;
+    display: grid;
+    /* bad pratice - non flexible(non-responsiveness) */
+    /* grid-template-columns: 200px 200px 210px; */
+    /* flexible grid banaune tarika */
+    /* grid-template-columns: 1fr 1fr 1 fr; */
+    /* flexible banauni same tarika */
+    /* grid-template-rows: repeat(3,1fr); */
+    /* combination of two above type  - non flexible*/
+    /* grid-template-columns: 100px repeat(2, 1fr) 200px; */
+
+    /* aba ysmai width ghataidim grid-template-column: lai 150px 1st columnko rakhera jasma table of contents lekhni jasto section banxa & 1fr widtht rakhdim baki lai jasma main content or body lekhni thau banxa & lastmaa ferii arko section banxa jasmaa ads haru run garauna milxa  same as geeks for geeks ko layout jastai banyo  */
+    grid-template-columns: 150px 1fr 150px;
+    /* grid-template-rows: 90px 90px 90px 90px; */
+    
+    /* aba ysmai height ghataidim grid-template-row: lai 30px 1st rowko rakhera; then header banxa and footer laini same lastko rowmaa ni 30 px height rakhdim baki lai repeat bhitrai rakhdim  */
+    grid-template-rows: 30px 1fr 30px;
+
+
+    /* gap: 15px; */
+
+}
+
+.box {
+    background-color: aqua;
+    border: 3px solid black;
+    /* gridmaa ni same work garxa justify contents align items le  */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* height: 80px; */
+    /* width: 80px; */
+}
+
+/* grid item properties  */
+#box1, #box11 {
+    /* (width already set gareko xa bhni width baddaina we need to remove the width to see the effect) */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* ysle bhanxa line-1 bata line-4 samma */
+
+    /* short hand notation ni xa  */
+    /*  grid column for grid column start and grid column end  */
+    grid-column: 1/span 4;
+
+}
+
+#box3, #box2, #box4{
+    /* (height already set gareko xa bhni height baddaina we need to remove the width to see the effect) */
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    /* short hand notation ni xa  */
+/* grid row for grid row start and grid row end  */
+
+    grid-row: 2/span 3;
+}
+
+
+/* other properties */
+
+/* justify content works same as flexbox */
+
+/* align items works same as flexbox  */
+
+/* justify self  */
+
+/* justify items  */
+
+/* align itself  */
+
+/* align self  */
+
+/* place items  */
+
+/* place-self  */
