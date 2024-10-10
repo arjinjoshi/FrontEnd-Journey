@@ -1,0 +1,41 @@
+/* external css link  */
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+.para {
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    border: 1px solid black;
+}
+
+#para1 {
+    font-size: larger;
+    font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+#para2 {
+
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#para3 {
+    font-variant: small-caps;
+    /* font-stretch: extra-condensed; */
+}
+
+#para4 {
+    font-stretch: narrower;
+}
+
+
+#para5 {
+    text-emphasis: double-circle red;
+    text-emphasis: filled;
+    text-emphasis: open;
+    text-emphasis: triangle blue;
+    /* external css used  */
+    font-family: myFirstFont;
+}
