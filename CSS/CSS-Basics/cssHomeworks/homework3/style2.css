@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: inline-block;
+  background-image: url("https://images.pexels.com/photos/27068604/pexels-photo-27068604/free-photo-of-skyscrapers-in-manhattan-in-new-york.jpeg");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  display: inline-block;
+  position: absolute;
+}
+
+#text1 {
+  top: 0px;
+  margin: 0px;
+}
+
+#text2 {
+  top: 94vh;
+}
+
+#text3 {
+  top: 47vh;
+  left: 48vw;
+}
+
+#text4 {
+  top: 0px;
+  left: 96vw;
+}
+
+#text5 {
+  left: 96vw;
+  top: 94vh;
+}
